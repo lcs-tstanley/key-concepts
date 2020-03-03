@@ -50,6 +50,9 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 canvas.fillColor = lightBlue
 
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+
 for rectanglePosition in stride(from: 0, to: 350, by: 100) {
     canvas.drawRectangle(at: Point(x: rectanglePosition, y: 0), width: 50, height: 350)
 }
