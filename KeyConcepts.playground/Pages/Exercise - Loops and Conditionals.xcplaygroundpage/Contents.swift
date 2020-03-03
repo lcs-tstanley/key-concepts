@@ -48,6 +48,7 @@ canvas.fillColor = deepOrange
 
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
+// Make blue rectangles
 canvas.fillColor = lightBlue
 
 canvas.drawShapesWithBorders = false
@@ -56,3 +57,18 @@ canvas.drawShapesWithFill = true
 for rectanglePosition in stride(from: 0, to: 350, by: 100) {
     canvas.drawRectangle(at: Point(x: rectanglePosition, y: 0), width: 50, height: 350)
 }
+
+// Make green rectangles
+canvas.fillColor = neonGreen
+
+for rectanglePosition in stride(from: 50, to: 400, by: 100) {
+    canvas.drawRectangle(at: Point(x: rectanglePosition, y: 50), width: 50, height: 350)
+}
+
+// Make text
+let white =  Color(hue: 0, saturation: 0, brightness: 100, alpha: 100)
+
+canvas.textColor = white
+canvas.drawText(message: "sloan", at: Point(x: 150, y: 408), size: 95, kerning: 0.0)
+
+canvas.drawText(message: "saturday", at: Point(x: 17, y: 545), size: 10, kerning: 0.0)
