@@ -44,3 +44,7 @@ let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
  */
 PlaygroundPage.current.liveView = canvas
 
+canvas.fillColor = deepOrange
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
